@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getrude's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f4f9f9;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #1d3557;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* Top Container */
+    .top-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #c6e9e9;
+      text-align: center;
+    }
+
+    .top-container video {
+      border-radius: 15px;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .top-container .intro {
+      max-width: 600px;
+    }
+
+    /* Second Container (Skills) */
+    .second-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+      padding: 40px 20px;
+      background-color: #cfe7df;
+      justify-content: center;
+    }
+
+    .second-container .content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .second-container .content ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .second-container .image img {
+      border-radius: 15px;
+      max-width: 300px;
+      height: auto;
+    }
+
+    /* Third Container (Experience) */
+    .third-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+      background-color: rgba(201, 228, 239, 0.82);
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .third-container ol, .third-container ul {
+      margin-left: 20px;
+    }
+
+    .third-container img {
+      border-radius: 15px;
+      max-width: 300px;
+      height: auto;
+    }
+
+    /* Contact Section */
+    .contact-me {
+      background-color: #c3dbe6;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .contact-me h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact-me .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #1d3557;
+      color: #fff;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .contact-me .btn:hover {
+      background-color: #457b9d;
+    }
+
+    /* Footer */
+    .bottom-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: #1d3557;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bottom-container a {
+      color: #f1faee;
+      font-weight: bold;
+    }
+
+    .bottom-container p {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .top-container, .second-container, .third-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .second-container .image img,
+      .third-container img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Section -->
+  <div class="top-container">
+    <video autoplay loop muted playsinline>
+      <source src="a.mp4" type="video/mp4">
+    </video>
+    <div class="intro">
+      <h1>Hello, I am Getrude</h1>
+      <p>A professional medical laboratory scientist. Not only do I love to work in the laboratory, sometimes I write stories.</p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="second-container">
+    <div class="content">
+      <h2>My Skills</h2>
+      <ul>
+        <li><strong>Haematology:</strong>
+          <ul>
+            <li>Erythrocyte sedimentation rate</li>
+            <li>Blood grouping (ABO/Rhesus system)</li>
+            <li>G6PD testing</li>
+            <li>Haemoglobin electrophoresis</li>
+            <li>Phlebotomy (venipuncture)</li>
+            <li>Full blood count automation</li>
+            <li>Preparation of thin and thick film for malaria</li>
+            <li>Malaria parasite counting and microscopy</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="./a8f284cf430e9b5ee5df1d02395ba11c (1).gif" alt="Haematology">
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="third-container">
+    <div class="content">
+      <h2>Microbiology Experience</h2>
+      <ul>
+        <li>Routine urine & stool examinations</li>
+        <li>H. pylori testing for ulcers</li>
+        <li>Widal test (Salmonella identification)</li>
+        <li>High vaginal/urethral swabs</li>
+        <li>Gram staining for bacterial identification</li>
+        <li>Chlamydia & Gonorrhoea testing</li>
+        <li>Viewing parasites & bacteria under microscope</li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="./12355700eb3dc9fefe6e3deb465f6414.gif" alt="Microbiology">
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <p>Just give me a try!</p>
+    <a class="btn" href="mailto:samuelbaffoekwarteng@gmail.com">CONTACT ME</a>
+  </div>
+
+  <!-- Footer -->
+  <div class="bottom-container">
+    <a href="https://www.linkedin.com/in/angela-yu-963a584b/">LinkedIn</a>
+    <a href="https://twitter.com/yu_angela">Twitter</a>
+    <a href="https://www.appbrewery.com/">Website</a>
+    <p>© Getrude _Eagles and 3</p>
+  </div>
+
+</body>
+</html>
